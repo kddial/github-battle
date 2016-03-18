@@ -1,6 +1,8 @@
 # github-battle
 
-### Things to install for react project"
+Following ReactJS course made by Tyler McGinnis at http://courses.reactjsprogram.com/
+
+##### Things to install for react project"
 * npm init
 * npm install --save react react-dom
 * npm install --save-dev webpack html-webpack-plugin webpack-dev-server babel-{core,loader} babel-preset-react
@@ -8,13 +10,13 @@
 
 
 
-### Run Webpack for production
+#####Run Webpack for production
 * webpack -p
 * or
 * npm run production
 
 
-### Run Webpack during development
+#####Run Webpack during development
 
 * webpack-dev-server
 * or 
