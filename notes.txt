@@ -1,0 +1,8 @@
+Every React Component should have the following properties:
+
+FIRST
+- Focused
+- Independent
+- Reusable
+- Small
+-Testable
