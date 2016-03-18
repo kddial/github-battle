@@ -6,3 +6,15 @@ FIRST
 - Reusable
 - Small
 -Testable
+
+
+
+
+// Stateless Functional Componenets
+function Test (props) {
+  return (
+    <div> {props.name} </div>
+  )
+}
+
+<Test name="Kevin" />

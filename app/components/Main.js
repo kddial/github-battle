@@ -5,7 +5,6 @@ var Main = React.createClass({
     return (
       <div className='main-container'>
         <a href="./#/"> main </a>
-        <a href="./#/home"> home </a>
         {this.props.children}
       </div>
     )
