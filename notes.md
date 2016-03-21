@@ -65,3 +65,27 @@ shouldComponentUpdate:
 Used for showing meaning full error messages from the source code
 ```devtool: 'eval-source-map'```
 
+## Reduce function
+var votes = [
+  'tacos',
+  'pizza',
+  'pizza',
+  'tacos',
+  'fries',
+  'ice cream',
+  'ice cream',
+  'pizza'
+]
+
+var initialValue = {};
+
+var food_reducer = function(food_dict, food) {
+  if (!food_dict[food]) {
+    food_dict[food] = 1;
+  } else {
+    food_dict[food] = food_dict[food] + 1;
+  }
+  return food_dict;
+}
+var results = votes.reduce(food_reducer, initialValue);
+
