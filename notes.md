@@ -23,10 +23,12 @@ Secret: 8076dbfaa7d4185f
 
 
 ## JSX ternary operator example
+
+```
   return props.isLoading === true
     ? <p> LOADING! </p>
     : <p> CONFIRM BATTLE! </p>
-
+```
 
 ## Life cycle methods
 Map: https://d2vvqscadf4c1f.cloudfront.net/RXZidTc7S5WEicK3fiNW_Screen%20Shot%202016-02-25%20at%2012.06.29%20PM.png
