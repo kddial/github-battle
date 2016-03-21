@@ -39,9 +39,10 @@ var PromptContainer = React.createClass({
       // on playerOne. Go to /playerTwo
       console.log(this.context);
       this.context.router.push('/playerTwo/' + this.state.username);
-
     }
-
+  },
+  componentWillUnmount: function() {
+    console.log("prompt componentWillUnmount");
   },
   render: function() {
     return (

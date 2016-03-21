@@ -35,7 +35,7 @@ Prompt.propTypes = {
   header: PropTypes.string.isRequired,
   onSubmitUser: PropTypes.func.isRequired,
   onUpdateUser: PropTypes.func.isRequired,
-  username: PropTypes.func.isRequired
+  username: PropTypes.string.isRequired
 };
 
 
