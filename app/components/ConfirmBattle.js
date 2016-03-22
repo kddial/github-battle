@@ -4,6 +4,8 @@ var styles = require('../styles/index');
 var Link = require('react-router').Link;
 var UserDetails = require('./UserDetails');
 var UserDetailsWrapper = require('./UserDetailsWrapper');
+var MainContainer = require('../components/MainContainer');
+var Loading = require('./Loading');
 
 /* Used to puke out preformatted text 
  * Example: {puke(props)} */
@@ -16,8 +18,8 @@ function ConfirmBattle (props) {
 
   // do stuff with new data
   return props.isLoading === true
-    ? <p> LOADING! </p>
-    : <div className="jumbotron col-sm-12 text-center" style={styles.transparentBg}>
+    ? <Loading text={"Waiting"} speed={200}/>
+    : <MainContainer>
         <h1>Confirm Players</h1>
         
         <div className='col-sm-8 col-sm-offset-2'>
@@ -37,7 +39,7 @@ function ConfirmBattle (props) {
               Initiate Battle
             </button>
           </div>
-          
+
           <div className='col-sm-12' style={styles.space}>
             <Link to="/playerOne">
               <button type="button" className="btn btn-lg btn-danger" onClick={props.onInitiateBattle}>
@@ -46,7 +48,7 @@ function ConfirmBattle (props) {
             </Link>
           </div>
         </div>
-      </div>
+      </MainContainer>
 }
 
 
