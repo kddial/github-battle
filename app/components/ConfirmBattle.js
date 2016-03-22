@@ -37,8 +37,8 @@ function ConfirmBattle (props) {
               Initiate Battle
             </button>
           </div>
+          
           <div className='col-sm-12' style={styles.space}>
-
             <Link to="/playerOne">
               <button type="button" className="btn btn-lg btn-danger" onClick={props.onInitiateBattle}>
                 Reselect Players
